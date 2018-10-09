@@ -11,7 +11,8 @@ import by.paranoidandroid.weatherapp.domain.executor.impl.ThreadExecutor
  * For example, when an activity is getting destroyed then we should probably cancel an interactor
  * but the request will come from the UI thread unless the request was specifically assigned to a background thread.
  */
-abstract class AbstractInteractor(val threadExecutor: ThreadExecutor, val mainThread: MainThread) : Interactor {
+abstract class AbstractInteractor(val threadExecutor: ThreadExecutor,
+                                  val mainThread: MainThread) : Interactor {
     @Volatile private var isRunning = false
     @Volatile private var isCancelled = false
 
@@ -29,9 +30,9 @@ abstract class AbstractInteractor(val threadExecutor: ThreadExecutor, val mainTh
         isCancelled = false
     }
 
-    public fun isRunning() = isRunning
+    fun isRunning() = isRunning
 
-    public fun onFinish() {
+    fun onFinish() {
         isRunning = false
         isCancelled = false
     }

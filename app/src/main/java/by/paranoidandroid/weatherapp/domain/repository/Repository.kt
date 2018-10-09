@@ -1,16 +1,14 @@
 package by.paranoidandroid.weatherapp.domain.repository
 
-import by.paranoidandroid.weatherapp.domain.model.SimpleModel
-
 /**
  * A sample repository with CRUD operations on a model.
  */
 interface Repository {
-    fun get(id: Any): SimpleModel
+    fun get(id: Any): Any
 
-    fun insert(model: SimpleModel)
+    fun insert(model: Any)
 
-    fun delete(model: SimpleModel)
+    fun delete(model: Any)
 
-    fun update(model: SimpleModel)
+    fun update(model: Any)
 }
