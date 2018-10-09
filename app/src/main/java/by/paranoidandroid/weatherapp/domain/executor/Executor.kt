@@ -1,7 +1,6 @@
 package by.paranoidandroid.weatherapp.domain.executor
 
 import by.paranoidandroid.weatherapp.domain.interactor.AbstractInteractor
-import by.paranoidandroid.weatherapp.domain.interactor.Interactor
 
 /**
  * This executor is responsible for running interactors on background threads.

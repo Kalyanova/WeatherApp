@@ -6,4 +6,5 @@ import android.arch.persistence.room.PrimaryKey
 @Entity(tableName = "city")
 data class City(@PrimaryKey(autoGenerate = true)
                 val id: Int,
-                val name: String)
+                val name: String,
+                val country: String)

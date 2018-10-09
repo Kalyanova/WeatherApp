@@ -1,4 +1,4 @@
-package by.paranoidandroid.weatherapp.presentation.ui
+package by.paranoidandroid.weatherapp.presenter
 
 /**
  * This interface represents a basic view.

@@ -18,4 +18,8 @@ interface Presenter {
     fun destroy() {}
 
     fun onError(message: String) {}
+
+
+
+
 }
